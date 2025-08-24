@@ -84,7 +84,7 @@ async function getPageTafsir(page) {
 async function getTafsir() {
     const list = [];
     for (let i = 1; i <= 603; i += 2) {
-        console.log("")
+        console.log("Getting Tafsir...: ", i, '/', 603);
         let result = await getPageTafsir(i);
         list.push({
             ...result,
